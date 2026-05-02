@@ -34,7 +34,7 @@ En este laboratorio se creó y configuró una máquina virtual Linux utilizando 
 
 Se creó la máquina virtual con los parámetros solicitados y se adjuntó la ISO de Alpine Linux.
 
-![VM configurada](capturas/cp1_vm_config.png)
+![VM configurada](Capturas/cp1_vm_config.png)
 
 ## 2: Instalación de Alpine Linux
 
