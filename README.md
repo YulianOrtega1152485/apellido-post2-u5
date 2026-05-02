@@ -34,7 +34,7 @@ En este laboratorio se creó y configuró una máquina virtual Linux utilizando 
 
 Se creó la máquina virtual con los parámetros solicitados y se adjuntó la ISO de Alpine Linux.
 
-![VM configurada](Capturas/cp1_vm_config.png)
+![VM configurada](  Capturas/cp1_vm_config.png)
 
 ## 2: Instalación de Alpine Linux
 
@@ -56,7 +56,7 @@ Posteriormente, se completó la instalación en el disco virtual y se reinició 
 
 Se verificó que el sistema inicia correctamente mostrando la pantalla de login.
 
-![Arranque de Alpine](capturas/cp2_alpine_boot.png)
+![Arranque de Alpine](Capturas/cp2_alpine_boot.png)
 
 ## 3: Modos de red
 
@@ -69,7 +69,22 @@ Se configuraron y probaron distintos modos de red en la máquina virtual.
 
 
 ### NAT
-![NAT](capturas/cp3_red_nat.png)
+![NAT](Capturas/cp3_red_nat.png)
 
 ### Host-Only
-![HostOnly](capturas/cp3_red_hostonly.png)
+![HostOnly](Capturas/cp3_red_hostonly.png)
+
+## 4: Gestión de Snapshots
+
+Se crearon dos snapshots de la máquina virtual utilizando VBoxManage:
+
+- snap_base: estado inicial del sistema Alpine Linux
+- snap_con_herramientas: sistema con herramientas instaladas (curl, wget, nano, htop)
+
+Se verificó la lista de snapshots mediante el comando:
+
+VBoxManage snapshot "Lab5-Alpine" list
+
+Posteriormente, se restauró el snapshot base y se comprobó que el software previamente instalado ya no estaba disponible, validando el correcto funcionamiento de las instantáneas.
+
+![Snapshots](Capturas/cp4_snapshots.png)
