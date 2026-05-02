@@ -57,3 +57,19 @@ Posteriormente, se completó la instalación en el disco virtual y se reinició 
 Se verificó que el sistema inicia correctamente mostrando la pantalla de login.
 
 ![Arranque de Alpine](capturas/cp2_alpine_boot.png)
+
+## 3: Modos de red
+
+Se configuraron y probaron distintos modos de red en la máquina virtual.
+
+| Modo      | IP obtenida    | Internet |
+|-----------|--------------  |----------|
+| NAT       | 10.0.2.15      | Sí       |
+| Host-Only | 192.168.56.101 | No       |
+
+
+### NAT
+![NAT](capturas/cp3_red_nat.png)
+
+### Host-Only
+![HostOnly](capturas/cp3_red_hostonly.png)
