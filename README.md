@@ -35,3 +35,25 @@ En este laboratorio se creó y configuró una máquina virtual Linux utilizando 
 Se creó la máquina virtual con los parámetros solicitados y se adjuntó la ISO de Alpine Linux.
 
 ![VM configurada](capturas/cp1_vm_config.png)
+
+## 2: Instalación de Alpine Linux
+
+Se realizó la instalación del sistema operativo Alpine Linux dentro de la máquina virtual creada previamente.
+
+El proceso se llevó a cabo utilizando el comando `setup-alpine`, donde se configuraron los siguientes aspectos:
+
+- Distribución de teclado: es
+- Hostname: lab5-alpine
+- Red: configuración automática mediante DHCP
+- Zona horaria: America/Bogota
+- Cliente NTP: chrony
+- Usuario: no se creó usuario adicional (se utilizó root)
+- Servidor SSH: openssh
+- Disco: sda
+- Tipo de instalación: sys (instalación en disco)
+
+Posteriormente, se completó la instalación en el disco virtual y se reinició la máquina, retirando la imagen ISO para permitir el arranque desde el disco.
+
+Se verificó que el sistema inicia correctamente mostrando la pantalla de login.
+
+![Arranque de Alpine](capturas/cp2_alpine_boot.png)
